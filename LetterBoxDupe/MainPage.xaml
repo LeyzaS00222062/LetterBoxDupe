@@ -10,7 +10,7 @@
             Padding="30,0"
             Spacing="25">
             <Image
-                Source="letterxdupe.png"
+                Source="letterbxdupelogo.png"
                 HeightRequest="185"
                 Aspect="AspectFit"
                 SemanticProperties.Description="picture of film camera" 
@@ -26,13 +26,13 @@
                 TextColor="Purple"
                 Style="{StaticResource SubHeadline}"
                 SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
-
+                 />
+            
             <SearchBar
-                x:Name="MediaSearch"
-                Placeholder="Search your Favourite Media... Fear Street..."
+                x:Name="SrchBrMovie"
+                Placeholder="Search your Favourite Movie... "
                 PlaceholderColor="Purple"
-                BackgroundColor="DarkGrey"
+                BackgroundColor="DimGrey"
                 />
         </VerticalStackLayout>
     </ScrollView>

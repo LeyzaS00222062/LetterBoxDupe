@@ -5,10 +5,10 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:LetterBoxDupe"
     Shell.FlyoutBehavior="Flyout"
-    Title="LetterBoxDupe">
+    Title="LetterBoxDupe"
+    BackgroundColor="LightGoldenrodYellow">
 
     <ShellContent
-        Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 

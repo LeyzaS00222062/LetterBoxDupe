@@ -5,6 +5,8 @@
         public App()
         {
             InitializeComponent();
+            VersionTracking.Track();
+      
         }
 
         protected override Window CreateWindow(IActivationState? activationState)
