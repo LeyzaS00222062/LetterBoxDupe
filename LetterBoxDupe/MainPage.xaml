@@ -31,9 +31,18 @@
             <SearchBar
                 x:Name="SrchBrMovie"
                 Placeholder="Search your Favourite Movie... "
+                TextChanged="OnTextChanged"
+                SearchButtonPressed="searchBar_MovieFind"
+                CancelButtonColor ="DarkSlateGrey"
                 PlaceholderColor="Purple"
                 BackgroundColor="DimGrey"
                 />
+
+            <ListView 
+                x:Name="searchResults" 
+                BackgroundColor="DimGrey"
+                />
+
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
