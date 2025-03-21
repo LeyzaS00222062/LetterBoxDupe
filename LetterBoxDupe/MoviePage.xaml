@@ -6,21 +6,34 @@
              Title="Movie Results Page">
     <ScrollView>
 
-        <Grid>
-            <ListView x:Name="movieResultsPage">
+        <StackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="letterbxdupelogo.png"
+                HeightRequest="150"
+                Aspect="AspectFit"
+                SemanticProperties.Description="picture of film camera" 
+                />
+            <Label
+                Text="LetterXDupe"
+                TextColor="PaleVioletRed"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
 
+
+            <ListView x:Name="movieResultsPage" Background="DimGrey" HeightRequest="250">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <Border  Padding="10" Margin="5">
+                        <Border StrokeThickness="5" BackgroundColor="Black" Padding="10" Margin="5">
                             <StackLayout>
-                                <Label FontSize="16" FontAttributes="Bold" Text="{Binding Title}"/>
-                                <Label FontSize="14" Text="{Binding Description}"/>
+                                
+                                <ContentPresenter Content="{Binding Title}" BackgroundColor="WhiteSmoke" Opacity="80"/>
                             </StackLayout>
                         </Border>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-        </Grid>
-
+        </StackLayout>
     </ScrollView>
 </ContentPage>

@@ -27,7 +27,7 @@
                 Style="{StaticResource SubHeadline}"
                 SemanticProperties.HeadingLevel="Level2"
                  />
-            
+
             <SearchBar
                 x:Name="SrchBrMovie"
                 Placeholder="Search your Favourite Movie... "
@@ -45,8 +45,6 @@
                 BorderColor="Purple"
                 TextColor="PapayaWhip"
                 />
-
-
 
         </VerticalStackLayout>
     </ScrollView>
