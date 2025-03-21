@@ -2,8 +2,25 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LetterBoxDupe.MoviePage"
-             BackgroundColor="LightGoldenrodYellow">
+             BackgroundColor="LightGoldenrodYellow"
+             Title="Movie Results Page">
     <ScrollView>
-        
+
+        <Grid>
+            <ListView x:Name="movieResultsPage">
+
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Border  Padding="10" Margin="5">
+                            <StackLayout>
+                                <Label FontSize="16" FontAttributes="Bold" Text="{Binding Title}"/>
+                                <Label FontSize="14" Text="{Binding Description}"/>
+                            </StackLayout>
+                        </Border>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+
     </ScrollView>
 </ContentPage>

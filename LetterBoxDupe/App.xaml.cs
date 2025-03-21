@@ -11,7 +11,7 @@
 
         protected override Window CreateWindow(IActivationState? activationState)
         {
-            return new Window(new MoviePage());
+            return new Window(new MainPage());
         }
     }
 }

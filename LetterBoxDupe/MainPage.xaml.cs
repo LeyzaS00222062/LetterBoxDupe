@@ -2,18 +2,25 @@
 {
     public partial class MainPage : ContentPage
     {
-
+        
         public MainPage()
         {
             InitializeComponent();
 
         }
 
-        //async void OnTextChanged(object sender, EventArgs e)
-        //{
-            //SearchBar searchBar = (SearchBar)sender;
-            //searchResults.ItemsSource = get(searchBar.Text);
-        //}
+        private void SearchButton_Click(object sender, EventArgs e)
+        {
+            string query = SrchBrMovie.Text;
+
+            List<SearchMovieResults> results = new List<SearchMovieResults>
+            {
+                new SearchMovieResults {Title = "Title", Description = "Description"}
+            };
+
+            Navigation.PushModalAsync(new MoviePage(results));
+
+        }
 
     }
 

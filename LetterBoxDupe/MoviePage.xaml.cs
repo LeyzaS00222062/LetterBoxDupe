@@ -1,12 +1,13 @@
 ﻿namespace LetterBoxDupe
 {
-    public partial class MainPage : ContentPage
+    public partial class MoviePage : ContentPage
     {
-        public MoviePage()
+        public MoviePage(List<SearchMovieResults> results)
         {
             InitializeComponent();
+            movieResultsPage.ItemsSource = results;
         }
 
-
+        
     }
 }
